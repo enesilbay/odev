@@ -4,6 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benim Web Sitem</title>
+
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .film {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+      width: 220px;
+      margin: 20px auto;
+      padding: 16px;
+    }
+
+    .film img {
+      width: 200px;
+      height: 300px;
+      border-radius: 8px;
+    }
+
+    .film button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #2d89ef;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .film button:hover {
+      background-color: #1b5cb8;
+    }
+  </style>
 </head>
 <body>
   <h2>Filmler</h2>
@@ -11,17 +49,15 @@
   <div class="film">
     <h3>Film 1: İnception</h3>
     <img src="https://picsum.photos/200/300" alt="Rastgele Film Görseli">
-
-
     <p>Rüyaların içinde rüya! Aksiyon ve zeka dolu bir film.</p>
+    <button>İzle</button>
   </div>
 
   <div class="film">
     <h3>Film 2: Interstellar</h3>
     <img src="https://picsum.photos/200/300" alt="Rastgele Film Görseli">
-
     <p>Uzayın derinliklerinde geçen bir yolculuk.</p>
+    <button>İzle</button>
   </div>
 </body>
-
 </html>
