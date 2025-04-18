@@ -3,63 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benim Web Sitem</title>
-
+  <title>Film İzleme Sitesi</title>
   <style>
     body {
-      background-color: #f2f2f2;
       font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 20px;
+      padding: 0;
+    }
+
+    h2 {
       text-align: center;
+    }
+
+    .film-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .film {
       background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
-      width: 220px;
-      margin: 20px auto;
-      padding: 16px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     .film img {
-      width: 200px;
-      height: 300px;
+      width: 100%;
+      max-width: 200px;
       border-radius: 8px;
     }
 
     .film button {
-      margin-top: 10px;
-      padding: 8px 16px;
-      background-color: #2d89ef;
+      background-color: #007bff;
       color: white;
       border: none;
-      border-radius: 6px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
       cursor: pointer;
     }
 
     .film button:hover {
-      background-color: #1b5cb8;
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
+
   <h2>Filmler</h2>
 
-  <div class="film">
-    <h3>Film 1: İnception</h3>
-    <img src="inception.jpg" alt="Inception Afişi">
+  <div class="film-grid">
+    <div class="film">
+      <h3>Film 1: Inception</h3>
+      <img src="inception.jpg" alt="Inception Afişi">
+      <p>Rüyaların içinde rüya! Aksiyon ve zeka dolu bir film.</p>
+      <button>İzle</button>
+    </div>
 
-    <p>Rüyaların içinde rüya! Aksiyon ve zeka dolu bir film.</p>
-    <button>İzle</button>
+    <div class="film">
+      <h3>Film 2: Interstellar</h3>
+      <img src="interstellar.jpg" alt="Interstellar Afişi">
+      <p>Uzayın derinliklerinde geçen bir yolculuk.</p>
+      <button>İzle</button>
+    </div>
+
+    <div class="film">
+      <h3>Film 3: Matrix</h3>
+      <img src="matrix.jpg" alt="Matrix Afişi">
+      <p>Gerçeklik ve sanal dünya arasındaki farkı sorgulatan film.</p>
+      <button>İzle</button>
+    </div>
+
+    <div class="film">
+      <h3>Film 4: The Dark Knight</h3>
+      <img src="dark-knight.jpg" alt="Dark Knight Afişi">
+      <p>Batman'in karanlık tarafıyla yüzleştiği bir başyapıt.</p>
+      <button>İzle</button>
+    </div>
   </div>
 
-  <div class="film">
-    <h3>Film 2: Interstellar</h3>
-    <img src="interstellar.jpg" alt="Interstellar Afişi">
-
-    <p>Uzayın derinliklerinde geçen bir yolculuk.</p>
-    <button>İzle</button>
-  </div>
 </body>
 </html>
