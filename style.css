@@ -9,16 +9,6 @@ h2 {
   text-align: center;
 }
 
-#aramaKutusu {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  width: 300px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .film-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,4 +43,18 @@ h2 {
 
 .film button:hover {
   background-color: #0056b3;
+}
+
+.film button.yesil {
+  background-color: #28a745;
+  margin-left: 10px;
+}
+
+.film button.yesil:hover {
+  background-color: #1e7e34;
+}
+
+.puan {
+  font-size: 16px;
+  margin-top: 10px;
 }
