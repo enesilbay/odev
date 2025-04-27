@@ -1,18 +1,14 @@
+// script.js
 function filmAra() {
   const arama = document.getElementById("aramaKutusu").value.toLowerCase();
   const filmler = document.getElementsByClassName("film");
 
-  for (let i = 0; i < filmler.length; i++) {
-    const baslik = filmler[i].getElementsByTagName("h3")[0].textContent.toLowerCase();
-    if (baslik.includes(arama)) {
-      filmler[i].style.display = "block";
-    } else {
-      filmler[i].style.display = "none";
-    }
-  }
+  Array.from(filmler).forEach(film => {
+    const baslik = film.querySelector("h3").textContent.toLowerCase();
+    film.style.display = baslik.includes(arama) ? "block" : "none";
+  });
 }
 
-// Sayfa yüklendikten sonra input'a dinleyici ekleyelim:
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("aramaKutusu").addEventListener("keyup", filmAra);
 });
