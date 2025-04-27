@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  margin: 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -9,19 +9,33 @@ h2 {
   text-align: center;
 }
 
+.arama-alani {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#aramaKutusu {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 .film-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 film yanyana olacak */
   gap: 20px;
-  max-width: 900px;
+  max-width: 1200px; /* Ekranı daha geniş göstermek için */
   margin: 0 auto;
+  padding: 20px;
 }
 
 .film {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
