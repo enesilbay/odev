@@ -12,3 +12,22 @@ function filmAra() {
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("aramaKutusu").addEventListener("keyup", filmAra);
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const temaButonu = document.getElementById("temaButonu");
+
+  temaButonu.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    // Temayı localStorage ile hatırlamak istersen:
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("tema", "dark");
+    } else {
+      localStorage.setItem("tema", "light");
+    }
+  });
+
+  // Sayfa yüklenince önceki tema uygulanır
+  if (localStorage.getItem("tema") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});

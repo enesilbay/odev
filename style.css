@@ -11,6 +11,32 @@
 * {
   box-sizing: border-box;
 }
+/* Varsayılan (light tema) */
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  transition: 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
 
 body {
   font-family: 'Roboto', sans-serif;
