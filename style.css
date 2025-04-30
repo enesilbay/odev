@@ -7,6 +7,17 @@
   --text: #333333;
   --text-light: #555555;
 }
+.logo-alani {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
 
 * {
   box-sizing: border-box;
