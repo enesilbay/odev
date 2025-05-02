@@ -65,7 +65,7 @@ header {
 }
 
 .logo {
-  width: 40px;
+  width: 125px;
   height: auto;
 }
 
@@ -194,9 +194,6 @@ nav a:hover {
 .film button.yesil:hover {
   background-color: #e64a19;
 }
-/* style.css dosyasına bu stilleri ekleyin */
-
-/* Detay Sayfası Stilleri */
 .detay-container {
   display: flex;
   flex-direction: column;
