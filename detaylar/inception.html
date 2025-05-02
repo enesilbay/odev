@@ -2,84 +2,65 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inception - Detaylar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-    .container {
-      display: flex;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      align-items: flex-start;
-      gap: 20px;
-    }
-    .container img {
-      width: 300px;
-      border-radius: 10px;
-    }
-    .details {
-      flex: 1;
-    }
-    .details h1 {
-      margin-top: 0;
-      color: #333;
-    }
-    .details h2 {
-      margin-top: 20px;
-      color: #555;
-    }
-    .details p, .details ul {
-      color: #666;
-      font-size: 16px;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background-color: #0077cc;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005fa3;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo-alani">
+        <img src="../images/logo.png" alt="Site Logosu" class="logo">
+        <h1>Film İzle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <img src="../afisler/inception.jpg" alt="Inception Afişi">
-  
-  <div class="details">
-    <h1>Inception</h1>
+  <main class="detay-container">
+    <h1 class="detay-baslik">Inception</h1>
+    
+    <div class="detay-icerik">
+      <div class="detay-afis">
+        <img src="../afisler/inception.jpg" alt="Inception Afişi">
+      </div>
+      
+      <div class="detay-bilgiler">
+        <h2>Konusu</h2>
+        <p>Christopher Nolan’ın rüya hırsızlığı konseptli bilimkurgu filmi. Bir grup insan, bilinçaltına girerek gizli bilgileri çalar.</p>
+        
+        <h2>Yönetmen</h2>
+        <p>Christopher Nolan</p>
+        
+        <h2>Oyuncular</h2>
+        <ul>
+          <li>Leonardo DiCaprio - Dom Cobb</li>
+          <li>Joseph Gordon-Levitt - Arthur</li>
+          <li>Ellen Page - Ariadne</li>
+          <li>Tom Hardy - Eames</li>
+        </ul>
+        
+        <h2>Ödüller</h2>
+        <p>4 Oscar ödülü, 14 Oscar adaylığı</p>
+        
+        <h2>IMDB Puanı</h2>
+        <p class="detay-puan">8.8 / 10</p>
+      </div>
+    </div>
+    
+    <a href="../index.html" class="detay-geri-buton">← Ana Sayfaya Dön</a>
+  </main>
 
-    <h2>Konusu</h2>
-    <p>Dom Cobb, insanların rüyalarına girip fikir çalabilen yetenekli bir hırsızdır. Bu kez bir fikri çalmak değil, bir fikri rüya yoluyla birinin zihnine yerleştirme görevi alır.</p>
-
-    <h2>Yönetmen</h2>
-    <p>Christopher Nolan</p>
-
-    <h2>Oyuncular</h2>
-    <ul>
-      <li>Leonardo DiCaprio</li>
-      <li>Joseph Gordon-Levitt</li>
-      <li>Elliot Page</li>
-    </ul>
-
-    <h2>IMDB Puanı</h2>
-    <p>8.8 / 10</p>
-
-    <a href="../index.html"><button>← Geri Dön</button></a>
-  </div>
-</div>
-
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Film İzle. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 </body>
 </html>

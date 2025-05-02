@@ -194,3 +194,98 @@ nav a:hover {
 .film button.yesil:hover {
   background-color: #e64a19;
 }
+/* style.css dosyasına bu stilleri ekleyin */
+
+/* Detay Sayfası Stilleri */
+.detay-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detay-baslik {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--accent-secondary);
+}
+
+.detay-icerik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.detay-afis {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detay-afis img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.detay-bilgiler {
+  flex: 2;
+  min-width: 300px;
+}
+
+.detay-bilgiler h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+.detay-bilgiler p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.detay-bilgiler ul {
+  padding-left: 20px;
+  color: var(--text-light);
+}
+
+.detay-bilgiler li {
+  margin-bottom: 8px;
+}
+
+.detay-puan {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.detay-geri-buton {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.detay-geri-buton:hover {
+  background-color: #1565c0;
+}
+
+/* Dark mode ayarları */
+body.dark-mode .detay-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .detay-bilgiler p,
+body.dark-mode .detay-bilgiler ul {
+  color: #e0e0e0;
+}

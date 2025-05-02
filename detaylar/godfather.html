@@ -2,39 +2,65 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Godfather - Detaylar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* Stil kodları aynı */
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo-alani">
+        <img src="../images/logo.png" alt="Site Logosu" class="logo">
+        <h1>Film İzle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <img src="../afisler/godfather.jpg" alt="The Godfather Afişi">
-  
-  <div class="details">
-    <h1>The Godfather</h1>
+  <main class="detay-container">
+    <h1 class="detay-baslik">The Godfather</h1>
+    
+    <div class="detay-icerik">
+      <div class="detay-afis">
+        <img src="../afisler/godfather.jpg" alt="The Godfather Afişi">
+      </div>
+      
+      <div class="detay-bilgiler">
+        <h2>Konusu</h2>
+        <p>Corleone ailesinin suç imparatorluğunu devralmak zorunda kalan Michael Corleone'nin hikayesi. Başlangıçta aile işlerine karışmak istemeyen Michael, bir dizi olayın ardından babası Don Vito Corleone'nin yerini almak zorunda kalır.</p>
+        
+        <h2>Yönetmen</h2>
+        <p>Francis Ford Coppola</p>
+        
+        <h2>Oyuncular</h2>
+        <ul>
+          <li>Marlon Brando - Don Vito Corleone</li>
+          <li>Al Pacino - Michael Corleone</li>
+          <li>James Caan - Sonny Corleone</li>
+          <li>Robert Duvall - Tom Hagen</li>
+        </ul>
+        
+        <h2>Ödüller</h2>
+        <p>3 Oscar (En İyi Film, En İyi Erkek Oyuncu, En İyi Uyarlama Senaryo), 7 Altın Küre adaylığı</p>
+        
+        <h2>IMDB Puanı</h2>
+        <p class="detay-puan">9.2 / 10</p>
+      </div>
+    </div>
+    
+    <a href="../index.html" class="detay-geri-buton">← Ana Sayfaya Dön</a>
+  </main>
 
-    <h2>Konusu</h2>
-    <p>Corleone ailesinin suç imparatorluğunu devralmak zorunda kalan Michael Corleone'nin hikayesi.</p>
-
-    <h2>Yönetmen</h2>
-    <p>Francis Ford Coppola</p>
-
-    <h2>Oyuncular</h2>
-    <ul>
-      <li>Marlon Brando</li>
-      <li>Al Pacino</li>
-      <li>James Caan</li>
-    </ul>
-
-    <h2>IMDB Puanı</h2>
-    <p>9.2 / 10</p>
-
-    <a href="../index.html"><button>← Geri Dön</button></a>
-  </div>
-</div>
-
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Film İzle. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 </body>
 </html>

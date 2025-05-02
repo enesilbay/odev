@@ -2,40 +2,66 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulp Fiction - Detaylar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* Inception'taki stil kodlarını buraya kopyalayın */
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo-alani">
+        <img src="../images/logo.png" alt="Site Logosu" class="logo">
+        <h1>Film İzle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <img src="../afisler/pulp-fiction.jpg" alt="Pulp Fiction Afişi">
-  
-  <div class="details">
-    <h1>Pulp Fiction</h1>
+  <main class="detay-container">
+    <h1 class="detay-baslik">Pulp Fiction</h1>
+    
+    <div class="detay-icerik">
+      <div class="detay-afis">
+        <img src="../afisler/pulp-fiction.jpg" alt="Pulp Fiction Afişi">
+      </div>
+      
+      <div class="detay-bilgiler">
+        <h2>Konusu</h2>
+        <p>Birbirine bağlı suç hikayelerinden oluşan bu filmde, iki gangster, bir gangsterin karısı ve bir boksörün hayatları kesişir. Quentin Tarantino'nun imzasını taşıyan bu kült film, zamanında devrim niteliğinde bir anlatı yapısı sunmuş ve sinema tarihine geçmiştir.</p>
+        
+        <h2>Yönetmen</h2>
+        <p>Quentin Tarantino</p>
+        
+        <h2>Oyuncular</h2>
+        <ul>
+          <li>John Travolta - Vincent Vega</li>
+          <li>Samuel L. Jackson - Jules Winnfield</li>
+          <li>Uma Thurman - Mia Wallace</li>
+          <li>Bruce Willis - Butch Coolidge</li>
+          <li>Ving Rhames - Marsellus Wallace</li>
+        </ul>
+        
+        <h2>Ödüller</h2>
+        <p>Altın Palmiye (1994), En İyi Senaryo Akademi Ödülü (1995)</p>
+        
+        <h2>IMDB Puanı</h2>
+        <p class="detay-puan">8.9 / 10</p>
+      </div>
+    </div>
+    
+    <a href="../index.html" class="detay-geri-buton">← Ana Sayfaya Dön</a>
+  </main>
 
-    <h2>Konusu</h2>
-    <p>Birbirine bağlı suç hikayelerinden oluşan bu filmde, iki gangster, bir gangsterin karısı ve bir boksörün hayatları kesişir.</p>
-
-    <h2>Yönetmen</h2>
-    <p>Quentin Tarantino</p>
-
-    <h2>Oyuncular</h2>
-    <ul>
-      <li>John Travolta</li>
-      <li>Samuel L. Jackson</li>
-      <li>Uma Thurman</li>
-      <li>Bruce Willis</li>
-    </ul>
-
-    <h2>IMDB Puanı</h2>
-    <p>8.9 / 10</p>
-
-    <a href="../index.html"><button>← Geri Dön</button></a>
-  </div>
-</div>
-
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Film İzle. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 </body>
 </html>

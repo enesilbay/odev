@@ -2,47 +2,52 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Dark Knight - Detaylar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 20px; }
-    .container { display: flex; flex-wrap: wrap; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); gap: 20px; }
-    .container img { width: 300px; max-width: 100%; border-radius: 10px; }
-    .details { flex: 1; min-width: 250px; }
-    .details h1, .details h2 { margin-top: 0; color: #333; }
-    .details p, .details ul { color: #666; font-size: 16px; }
-    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; background-color: #0077cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background-color: #005fa3; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo-alani">
+        <img src="../images/logo.png" alt="Site Logosu" class="logo">
+        <h1>Film İzle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <img src="../afisler/dark-knight.jpg" alt="The Dark Knight Afişi">
-
-  <div class="details">
-    <h1>The Dark Knight</h1>
-
-    <h2>Konusu</h2>
-    <p>Batman, Gotham şehrini Joker'in kaos planlarından korumaya çalışır. Joker'in kargaşa planları, şehri karanlığa sürüklerken Batman, adalet için sınırlarını zorlar.</p>
-
-    <h2>Yönetmen</h2>
-    <p>Christopher Nolan</p>
-
-    <h2>Oyuncular</h2>
-    <ul>
-      <li>Christian Bale</li>
-      <li>Heath Ledger</li>
-      <li>Aaron Eckhart</li>
-      <li>Michael Caine</li>
-    </ul>
-
-    <h2>IMDB Puanı</h2>
-    <p>9.0 / 10</p>
-
-    <a href="../index.html"><button>← Geri Dön</button></a>
-  </div>
-</div>
-
-</body>
-</html>
+  <main class="detay-container">
+    <h1 class="detay-baslik">The Dark Knight</h1>
+    
+    <div class="detay-icerik">
+      <div class="detay-afis">
+        <img src="../afisler/dark-knight.jpg" alt="The Dark Knight Afişi">
+      </div>
+      
+      <div class="detay-bilgiler">
+        <h2>Konusu</h2>
+        <p>Batman, Gotham şehrini Joker'in kaos planlarından korumaya çalışır. Joker'in kargaşa planları şehri karanlığa sürüklerken Batman, adalet için sınırlarını zorlar. Harvey Dent'in Two-Face'e dönüşümüne tanık oluruz.</p>
+        
+        <h2>Yönetmen</h2>
+        <p>Christopher Nolan</p>
+        
+        <h2>Oyuncular</h2>
+        <ul>
+          <li>Christian Bale - Bruce Wayne / Batman</li>
+          <li>Heath Ledger - Joker</li>
+          <li>Aaron Eckhart - Harvey Dent</li>
+          <li>Gary Oldman - James Gordon</li>
+        </ul>
+        
+        <h2>Ödüller</h2>
+        <p>2 Oscar (En İyi Yardımcı Erkek Oyuncu - Heath Ledger, En İyi Ses Kurgusu), 8 Oscar adaylığı</p>
+        
+        <h2>IMDB Puanı</h2>
+        <p class="detay-puan">

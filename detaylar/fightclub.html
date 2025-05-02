@@ -2,39 +2,65 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fight Club - Detaylar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* Stil kodları aynı */
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <div class="logo-alani">
+        <img src="../images/logo.png" alt="Site Logosu" class="logo">
+        <h1>Film İzle</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Ana Sayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <img src="../afisler/fight-club.jpg" alt="Fight Club Afişi">
-  
-  <div class="details">
-    <h1>Fight Club</h1>
+  <main class="detay-container">
+    <h1 class="detay-baslik">Fight Club</h1>
+    
+    <div class="detay-icerik">
+      <div class="detay-afis">
+        <img src="../afisler/fight-club.jpg" alt="Fight Club Afişi">
+      </div>
+      
+      <div class="detay-bilgiler">
+        <h2>Konusu</h2>
+        <p>Uykusuzluk çeken bir ofis çalışanı, gizemli bir sabun satıcısı Tyler Durden ile tanışır ve birlikte underground bir dövüş kulübü kurarlar. Ancak kulüp beklenmedik bir şekilde büyür ve kontrol edilemez hale gelir.</p>
+        
+        <h2>Yönetmen</h2>
+        <p>David Fincher</p>
+        
+        <h2>Oyuncular</h2>
+        <ul>
+          <li>Brad Pitt - Tyler Durden</li>
+          <li>Edward Norton - Anlatıcı</li>
+          <li>Helena Bonham Carter - Marla Singer</li>
+          <li>Meat Loaf - Robert Paulson</li>
+        </ul>
+        
+        <h2>Ödüller</h2>
+        <p>1 Oscar adaylığı (En İyi Ses Kurgusu), Empire Ödülleri</p>
+        
+        <h2>IMDB Puanı</h2>
+        <p class="detay-puan">8.8 / 10</p>
+      </div>
+    </div>
+    
+    <a href="../index.html" class="detay-geri-buton">← Ana Sayfaya Dön</a>
+  </main>
 
-    <h2>Konusu</h2>
-    <p>Uykusuzluk çeken bir ofis çalışanı, gizemli bir sabun satıcısıyla tanışır ve birlikte underground bir dövüş kulübü kurarlar.</p>
-
-    <h2>Yönetmen</h2>
-    <p>David Fincher</p>
-
-    <h2>Oyuncular</h2>
-    <ul>
-      <li>Brad Pitt</li>
-      <li>Edward Norton</li>
-      <li>Helena Bonham Carter</li>
-    </ul>
-
-    <h2>IMDB Puanı</h2>
-    <p>8.8 / 10</p>
-
-    <a href="../index.html"><button>← Geri Dön</button></a>
-  </div>
-</div>
-
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Film İzle. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 </body>
 </html>
