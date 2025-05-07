@@ -45,4 +45,12 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+function rastgeleFilm() {
+  const filmler = document.querySelectorAll('.film');
+  const rastgeleIndex = Math.floor(Math.random() * filmler.length);
+  filmler.forEach(film => film.style.border = "none"); // Önceki vurguyu sil
+  const secilen = filmler[rastgeleIndex];
+  secilen.style.border = "3px solid orange";
+  secilen.scrollIntoView({ behavior: "smooth", block: "center" });
+}
 

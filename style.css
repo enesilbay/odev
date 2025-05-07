@@ -329,3 +329,8 @@ body.dark-mode .detay-bilgiler ul {
 #scrollTopBtn:hover {
   background-color: var(--accent-secondary);
 }
+button.yesil {
+  background-color: var(--accent-secondary);
+  font-size: 1rem;
+  padding: 12px 24px;
+}
