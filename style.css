@@ -54,8 +54,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  gap: 20px;
+  padding: 10px 15px;
+  gap: 15px;
 }
 
 .logo-alani {
@@ -65,13 +65,13 @@ header {
 }
 
 .logo {
-  width: 125px;
+  width: 90px;
   height: auto;
 }
 
 header h1 {
   color: var(--accent);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 0 auto;
   text-align: center;
   flex: 1;
@@ -194,6 +194,7 @@ nav a:hover {
 .film button.yesil:hover {
   background-color: #e64a19;
 }
+
 .detay-container {
   display: flex;
   flex-direction: column;
@@ -276,7 +277,6 @@ nav a:hover {
   background-color: #1565c0;
 }
 
-/* Dark mode ayarları */
 body.dark-mode .detay-container {
   background-color: #1e1e1e;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -286,7 +286,8 @@ body.dark-mode .detay-bilgiler p,
 body.dark-mode .detay-bilgiler ul {
   color: #e0e0e0;
 }
-/* Yükleniyor efekti */
+
+
 #preloader {
   position: fixed;
   width: 100%;
@@ -310,6 +311,7 @@ body.dark-mode .detay-bilgiler ul {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -329,8 +331,24 @@ body.dark-mode .detay-bilgiler ul {
 #scrollTopBtn:hover {
   background-color: var(--accent-secondary);
 }
+
 button.yesil {
   background-color: var(--accent-secondary);
   font-size: 1rem;
   padding: 12px 24px;
+}
+
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .header-container {
+    padding: 8px 10px;
+  }
 }
