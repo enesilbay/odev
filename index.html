@@ -185,6 +185,13 @@
   </main>
 
   <footer>
+    <p id="tarih"></p>
+    <script>
+  const bugun = new Date();
+  const secenekler = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById("tarih").textContent = bugun.toLocaleDateString('tr-TR', secenekler);
+</script>
+
     <div class="container footer-container">
       <p>&copy; 2025 Film İzle. Tüm hakları saklıdır.</p>
     </div>

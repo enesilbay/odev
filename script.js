@@ -1,4 +1,5 @@
 // script.js
+
 function filmAra() {
   const arama = document.getElementById("aramaKutusu").value.toLowerCase();
   const filmler = document.getElementsByClassName("film");
@@ -53,4 +54,5 @@ function rastgeleFilm() {
   secilen.style.border = "3px solid orange";
   secilen.scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
 
